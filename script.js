@@ -8,7 +8,7 @@
 //   });
 const allProductDiv = document.getElementById("all-product");
 
-fetch("/assets/products/products.json")
+fetch("products.json")
   .then((res) => res.json())
   .then((data) => {
     for (let i = 0; i < data.length; i++) {
